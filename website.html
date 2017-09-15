@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Xception Answering</title>
+
+
+<style>
+   h1 {
+	color: white;
+	font-family: Papyrus;
+	font-size:50px;
+	letter-spacing: 2px;	
+}
+
+   h2 {
+	color: white;
+	font-size: 30px;
+	font-family: Papyrus;
+} 
+
+   h3 {
+	color:white;
+	font-size: 21px;
+	font-family: Verdana;
+}
+
+   p {
+	color:white;
+	margin-bottom: 0cm;
+	margin-top: 0cm;
+	font-size: 20px;
+	font-family: Verdana;
+}
+
+
+   form {
+	text-align: center;
+}
+
+a:link, a:visited {
+    color:lightblue;
+}
+</style>
+</head>
+
+<body link='lightblue', background='{{url_for('static',filename='blueberries4.jpg')}}'>
+    <h1 style='text-align:center;'> Lets test it out </h1>
+    <h2 style='text-align:center;'>Enter the image URL and the question here!</h2>
+    <form action="submit" method="POST">
+        <input type="text" name="image_url">
+        <input type="text" name="question">
+        <input type="submit" name="my-form" value="Send">
+    </form>
+
+{% if answer %}
+{% for rec in answer %}
+   <h1 style='text-align:center;'> <a href="{{rec[-1]}}">{{answer[0]}}</a> </h1>
+{%endfor%}
+{%endif%}
+
+
+</body>
+</html>
+
