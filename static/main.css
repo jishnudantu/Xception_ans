@@ -4,10 +4,17 @@ body{
 }
 .well{
     margin-top: -2%;
-    opacity: 0.8;
+    opacity: 0.5;
     color: black;
 }
-
+.results{
+    align-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: lightgrey;
+}
 .navbar,
 .navbar-inverse,
 .navbar-fixed-top,
@@ -78,5 +85,5 @@ input{
 
 a:link,
 a:visited {
-    color: lightblue;
+    color: red;
 }

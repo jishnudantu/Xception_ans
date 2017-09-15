@@ -26,7 +26,7 @@ def my_form_post():
         top_preds = preds.argsort()[-5:][::-1]
         top_pred = [(metadata['ix_to_ans'][str(_)].title(), round(preds[_]*100.0,2)) for _ in top_preds][0]
 
-    return render_template("website.html", answer=[top_pred])
+    return render_template("website.html", answer=[[question,image_url,top_pred]])
 
 
 if __name__ == '__main__':

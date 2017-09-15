@@ -28,7 +28,7 @@
     <div class="well">
     <h1 class="intro"> Let's test it out </h1>
     <h2 class="intro2">Enter the Image URL and the Question here!</h2>
-    <form action="submit" method="POST">
+    <form action="/submit" method="POST">
         <div>
             <div class="user_input1">
                 <input class="image_url" type="text" name="image_url" placeholder="Image URL" required></div>
@@ -36,20 +36,24 @@
                 <input class="question" type="text" name="question" placeholder="Question" required>
             </div>
             <div class="user_but">
-                <button type="button" class="btn btn-default btn-primary" style="font-family: 'Comfortaa', cursive;" name="my-form">Send</button>
+                <button type="submit" class="btn btn-default btn-primary" style="font-family: 'Comfortaa', cursive;" name="my-form">Send</button>
             </div>
         </div>
     </form>
 
-<script>
+</div>
+<div class="results">
 {% if answer %}
 {% for rec in answer %}
-   <h1 style='text-align:center;'> <a href="{{rec[-1]}}">{{answer}}</a> </h1>
+   <img src = {{rec[1]}}>
+   <h1>The question is :</h1>
+   <h2>{{rec[0]}}</h2>
+    <h1>The Answer is :</h1>
+   <h2 style='text-align:center;'> <a href="{{rec[1]}}">{{rec[-1]}}</a> </h2>
 {%endfor%}
 {%endif%}
-</script>
-</div>
 
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
