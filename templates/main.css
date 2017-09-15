@@ -1,0 +1,82 @@
+body{
+    background-image: url(jonathan-simcoe-88013.jpg);
+    background-size: cover;
+}
+.well{
+    margin-top: -2%;
+    opacity: 0.8;
+    color: black;
+}
+
+.navbar,
+.navbar-inverse,
+.navbar-fixed-top,
+navbar-default {
+    background: #286090;
+    !important
+}
+.navbar-inverse,.navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #080808;
+    font-family: 'Comfortaa', cursive;
+}
+
+#title {
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+form{
+    text-align: center
+}
+
+.intro {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.intro2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+input{
+    text-align: center;
+    width: 23%;
+    border-bottom:1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    
+}
+.image_url{
+    font-size: 19px;
+    opacity: 1;
+}
+.question{
+    font-size: 19px;
+    opacity: 1;
+}
+.user_input1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+.user_input2 {
+    margin-bottom: 15px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+.btn{
+    font-family: 'Comfortaa', cursive;
+    width:10%;
+    opacity: 1;
+}
+
+a:link,
+a:visited {
+    color: lightblue;
+}
