@@ -1,19 +1,17 @@
 body{
-    background-image: url(/static/jonathan-simcoe-88013.jpg);
+    background-image: url(/static/background.jpg);
     background-size: cover;
 }
 .well{
     margin-top: -2%;
-    opacity: 0.5;
-    color: black;
+    opacity: 1.0;
 }
 .results{
     align-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 5%;
+    margin-left: 20%;
     margin-right: 5%;
-    color: lightgrey;
 }
 .navbar,
 .navbar-inverse,
